@@ -13,14 +13,18 @@ import UsersRating from '../components/UsersRating'
 const Home = () => {
     return (
         <div className='home-page-container'>
-                <section className='get-started'>
-                    <h1>All Blogs - One Place</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt commodi tenetur aspernatur quis inventore delectus, quasi omnis earum eveniet repellendus tempora exercitationem? </p>
-                    <button className='get-started-button'>Get Started</button>
+                <section className='top-section brd-red'>
+                    <div className='top-section-left-panel'>
+                        <h1>All Blogs - One Place</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt commodi tenetur aspernatur quis inventore delectus, quasi omnis earum eveniet repellendus tempora exercitationem? </p>
+                        <button className='get-started-button'>Get Started</button>
+                    </div>
+                    <div className='top-section-image-container'>
+                    <img className='top-section-image' src={woman} alt="woman reading"/>
+                    </div>
                 </section>
-                <img src={woman} alt="woman reading" className='woman-reading grid-col-span-2'/>
                 <img className='grid-react-image' src={reactImage} alt="" />
-                <section className='search grid-col-span-2'>
+                <section className='search grid-col-span-2 brd-red'>
                     <h1>Discover</h1>
                     <div className="name-topic-random">
                         <div className='name'>
