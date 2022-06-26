@@ -1,0 +1,21 @@
+.add {
+    display: block;
+    width: 60%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 1rem auto;
+    background: var(--crl-charcoal);
+    color: white;
+}
+
+.remove {
+    display: block;
+    width: 60%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 1rem auto;
+    background: red;
+    color: white;
+}

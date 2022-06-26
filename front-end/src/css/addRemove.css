@@ -1,0 +1,19 @@
+.blog-item-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 3rem;
+    margin: 0 auto;
+    margin-bottom: 0.25rem;
+    border-radius: 2%;
+}
+
+.blog-item-button-add {
+    background: var(--crl--darker-blue);
+    color: white;
+}
+
+.blog-item-button-remove {
+    background: red;
+    color: white;
+}

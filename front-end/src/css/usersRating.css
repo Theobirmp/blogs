@@ -1,0 +1,41 @@
+.users-container {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px red; */
+    width: 75%;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.user-rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px var(--crl-charcoal);
+}
+
+.img-quote {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* font-family: 'Pushster', cursive; */
+}
+
+.star-rating {
+    margin: 0 auto;
+}
+
+.users-container img {
+    height: 6.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    align-self: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.quote::before,
+.quote::after {
+    content: '"';
+}

@@ -1,0 +1,20 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--crl--darker-blue);
+    justify-content: flex-end;
+    gap: 1.5em;
+    list-style-type: none;
+    height: 7.5em;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.nav-bar>.nav-bar-item,
+.nav-bar>.nav-bar-item>* {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    flex-basis: 10%;
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.accordion-button {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 80%;
+    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.accordion-h1 {
+    cursor: pointer;
+}
+
+.question {
+    border: solid var(--crl-charcoal);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.question:hover {
+    background: var(--crl-light-grey);
+}
+
+.question p {
+    background: white !important;
+}
+
+.light-gray {
+    background: var(--crl-light-grey);
+}

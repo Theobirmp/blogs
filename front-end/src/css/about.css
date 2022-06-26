@@ -1,0 +1,83 @@
+.about-header {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.about-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container h1 {
+    font-size: 2.5rem;
+}
+
+.about-container li {
+    font-size: 2rem;
+}
+
+.about-project-container {
+    display: grid;
+    grid-template-areas: 'front back' 'info info';
+    background: var(--crl-charcoal);
+    color: white;
+}
+
+.front {
+    justify-self: center;
+    grid-area: front;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back {
+    /* justify-self: center; */
+    grid-area: back;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* width: 6.25em; 100px */
+
+
+/* height: 6.25em; 100px */
+
+.react {
+    width: 8rem;
+    height: 8rem;
+}
+
+.node {
+    width: 10rem;
+    height: 8rem;
+}
+
+.about-me-container {
+    grid-area: me;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--crl-charcoal);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 0%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-me-container h1 {
+    font-size: 2.5rem;
+}
+
+.about-me-container p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
