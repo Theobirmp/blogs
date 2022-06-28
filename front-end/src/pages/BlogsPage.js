@@ -20,6 +20,7 @@ const BlogsPage = () => {
     const [currBlogs,setCurrBlogs]=useState(blogs)
     const [displayBlogs,setDisplayBlogs]=useState([])
     const dispatch = useDispatch()
+    console.log(`all blogs ${blogs}`)
     useEffect(()=>{
       console.log('fetching data')
       dispatch(fetchBlogs())
@@ -47,7 +48,7 @@ const BlogsPage = () => {
             setCurrPage(1)
             console.log('curr blogs')
             console.log(tempCurrBlogs)
-    },[currFilter,currTopic])
+    },[currFilter,currTopic,blogs])
       //slices curr blogs to get the n we want in each page
 useEffect(()=>{
     
@@ -62,7 +63,7 @@ useEffect(()=>{
     console.log('display blogs')
     console.log(tempDisplayBlogs)
     setDisplayBlogs(displayBlogs=>tempDisplayBlogs)
-},[currPage,currBlogs])
+},[currPage,currBlogs,blogs])
     
     function ratingSort( a, b ) {
   if ( a.rating < b.rating ){

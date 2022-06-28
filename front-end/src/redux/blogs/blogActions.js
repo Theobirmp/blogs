@@ -34,6 +34,7 @@ export const unFavBlog=(id)=>{
 
 
 export const fetchBlogs=()=>{
+    console.log(`fetch blogs reducer`)
     return (dispatch)=>{
         dispatch(fetchBlogsBegin())
         axios.get(`http://localhost:4000/blogs`).then((res)=>{

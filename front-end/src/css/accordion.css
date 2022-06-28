@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
-.accordion {
+.accordion{
     display: flex;
     flex-direction: column;
     gap: 1em;

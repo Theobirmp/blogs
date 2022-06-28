@@ -11,7 +11,7 @@ const Favourites = () => {
     const fabvBlogs=useSelector(state=>state.blogs.blogs.filter(blog=>blog.isFavourite===true))
     const [favouriteBlogs,setFavouriteBlogs]=useState(fabvBlogs)
     useEffect(() => {
-        setFavouriteBlogs(favouriteBlogs=>fabvBlogs)
+        setFavouriteBlogs(favouriteBlogs=>favouriteBlogs)
         console.log('use effect fetchind blogs')
     }, [blogs])
     return (
