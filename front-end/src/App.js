@@ -12,7 +12,7 @@ import Footer from "./components/Footer"
 import CreateBlog from './pages/CreateBlog';
 
 function App() {
-  
+  console.log('this is working')
   return (
     <BlogProvider>
       <FilterTopicProvider>
