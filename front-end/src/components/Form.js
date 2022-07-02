@@ -40,7 +40,7 @@ const Form = () => {
             <div className="blog-form-select">
                 <label htmlFor="form-select" className="fs-500">Topic</label>
                 <select name="form-select" id="form-select" onChange={(e)=>setCurrBLog(blog=>({...blog,topic:e.target.value}))}>
-                    <option disabled selected value='DEFAULT'>Click Me</option>
+                    <option disabled selected value='DEFAULT'>Select Blog Category</option>
                     <option value="health">Health</option>
                     <option value="sports">Sports</option>
                     <option value="cooking">Cooking</option>

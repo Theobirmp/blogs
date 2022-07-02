@@ -1,11 +1,26 @@
+.blogs-filters-container{
+    padding-left: 1rem;
+    display: flex;
+    gap: 2rem;
+}
 .filter-button {
     background: var(--crl--darker-blue);
     color: white;
     border: none;
     outline: none;
-    cursor: pointer
+    cursor: pointer;
+    padding: 1rem 0.5rem;
 }
-
+.filter-button-topics{
+    background: var(--crl--darker-blue);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem 0.5rem;
+    display: flex;
+    gap: 1rem;
+}
 .filter-dropdown {
     display: flex;
     flex-direction: column;
@@ -20,10 +35,13 @@
     border: none;
     outline: none;
     cursor: pointer;
-    color: white;
-    background: var(--crl-charcoal);
+    color: var(--crl-charcoal);
     margin-top: 1rem;
     margin-bottom: 0.25rem;
+    padding: 1rem .5rem;
+    border-radius: 4px;
+    background-color: transparent;
+    border: var(--crl-charcoal) solid 1px;
 }
 
 .topics-dropdown-button {
@@ -31,10 +49,14 @@
     border: none;
     outline: none;
     cursor: pointer;
-    color: white;
     background: var(--crl-charcoal);
     margin-top: 1rem;
     margin-bottom: 0.25rem;
+    padding: 1rem .5rem;
+    border-radius: 4px;
+    background-color: transparent;
+    border: var(--crl-charcoal) solid 1px;
+    color: var(--crl-charcoal);
 }
 
 .topics-div {

@@ -1,62 +1,44 @@
-.solo-blog-contaianer {
+.blog-item{
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 4rem;
+    gap: .5rem;
 }
-
-.solo-blog-date-topic {
+.blog-topic-date{
     display: flex;
     gap: 1rem;
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-    align-items: center;
-    border-bottom: solid 2px var(--crl-charcoal);
-    margin-bottom: 0.5rem;
 }
-
-.solo-blog-image-name {
+.add-remove-button button{
+    padding: .35rem 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 100vmax;
+}
+.solo-blog-page-container{
+    width: 100%;
+    border: solid 1px red;
+}
+.solo-blog-container{
+    width: 20%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
-
-.solo-blog-image {
-    width: 40%;
-    aspect-ratio: 1/0.8;
-    margin: 0 auto;
+.solo-blog-container .solo-blog-date-topic{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
 }
-
-.solo-blog-name {
-    background: var(--crl-light-grey);
-    margin: 0 auto;
-    width: 70%;
-    text-align: center;
-}
-
-.solo-blog-sumary-body {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.solo-blog-summary {
-    font-size: 3rem;
-}
-
-.solo-blog-body {
-    text-align: start;
-    font-size: 1.5rem;
-}
-
-.solo-blog-calendar-icon {
-    font-size: 2rem;
-}
-
-.blog-suggestions {
-    width: 65%;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 4rem;
+.solo-blog-container .solo-add-favourites{
+    font-size: 30px;
+    background-color: var(--crl--darker-blue);
+    color: white;
+    cursor: pointer;
+    border-radius: 100vmax;
+    min-width: max-content;
+    padding: .75rem 1.5rem;
+    text-transform: capitalize;
 }

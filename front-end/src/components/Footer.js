@@ -38,8 +38,8 @@ const Footer = () => {
                </div>
                <WhiteLine colour="white"/>
                <div ref={personalInfo} className="personal-info display-none">
-                            <span className="info-email"><AiOutlineMail/> theobirmpil@gmail.com</span>
-                            <span className="info-phone"><AiOutlinePhone/> 6986615856</span>
+                            <a className='info-email' href = "mailto: theobirmpil@gmail.com"><AiOutlineMail/>theobirmpil@gmail.com</a>
+                            <a className='info-phone' href="tel:555-555-5555"><AiOutlinePhone/>6986615856</a>
                         </div>
            </footer>
     )

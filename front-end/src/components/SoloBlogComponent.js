@@ -9,6 +9,7 @@ import { BlogContext } from '../stateManagement/BlogContext'
 import { useState } from 'react'
 import AddRemove from './AddRemove'
 import { useEffect } from 'react'
+import '../css/soloBlog.css'
 const SoloBlogComponent = ({blog,addRem}) => {
     const {favouriteBlogs,setFavouriteBlogs}=useContext(BlogContext)
     function handleImage(topic){
@@ -48,9 +49,7 @@ console.log('solo blog rerender')
                     </div>
                     <div className="blog-name fs-500 bolder capitalise"><Link className='blog-name-link' to={`/blogs/${blog.name}`}>{blog.name}</Link></div>
                         <div className="blog-summary fs-400 capitalise">{blog.summary}</div>
-                        {blog.rating}
                         <StarRating value={blog.rating}/>
-                        <div>{blog.isFavourite?<div>true</div>:<div>false</div>}</div>
                     {/* <button className="blog-item-button" onClick={()=>deleteBlog(blog._id)}><BsFillTrashFill/></button> */}
                     <AddRemove addRem={addRem} blog={blog}/>
                 </div>)

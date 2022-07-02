@@ -19,7 +19,7 @@ const Nav = () => {
                 <Link to="/favourites" className="nav-bar-item">Favourites</Link>
                 <Link to="/about" className="nav-bar-item">About</Link>
             </div>
-            <button className='ham-menu-button' onClick={handleClick}><img  src={HamMenu}  alt="ham menu" /></button>
+            <button id='ham-menu-button' className='ham-menu-button' onClick={handleClick}><img  src={HamMenu}  alt="ham menu" /></button>
             <div className='mobile-menu' id={mobileIsOpen?'mobile-menu-active':''}>
                 <Link to="/" className="nav-bar-item">Home</Link>
                 <Link to="/blogs" className="nav-bar-item">Blogs</Link>

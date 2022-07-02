@@ -10,6 +10,7 @@ import Accordion from '../components/Accordion.js'
 import reactImage from "../images/react.svg"
 import nodeImage from "../images/fundamentals.svg"
 import UsersRating from '../components/UsersRating'
+import { Link } from 'react-router-dom'
 const Home = () => {
     return (
         <div className='home-page-container'>
@@ -17,7 +18,7 @@ const Home = () => {
                     <div className='top-section-left-panel'>
                         <h1>All Blogs - One Place</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt commodi tenetur aspernatur quis inventore delectus, quasi omnis earum eveniet repellendus tempora exercitationem? </p>
-                        <button className='get-started-button'>Get Started</button>
+                        <Link className='get-started-button' to='/blogs'>Get Started </Link>
                     </div>
                     <div className='top-section-image-container'>
                     <img className='top-section-image' src={woman} alt="woman reading"/>
@@ -57,14 +58,15 @@ const Home = () => {
                     <div className='create-right-panel'>
                         <h3 className='create-right-panel-h3'>Create</h3>
                         <p className='create-right-panel-p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, minima?</p>
-                        <button className='create-right-panel-button'>Create Blog</button>
+                        <Link className='create-right-panel-button' to='/createBlog'>Create Blog </Link>
                     </div>
             </section>
             <section className='accordion-container'>
                 <h1 className='faq'>Frequently Asked Questions</h1>
                 <Accordion/>
             </section>
-            <section className='users-ratings'>
+            <section className='users-ratings-section'>
+                <h3 className='users-rating-h3'>What our Users think about us</h3>
                 <UsersRating/>
             </section>
         </div>

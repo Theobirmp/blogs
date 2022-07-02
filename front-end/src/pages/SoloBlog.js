@@ -11,7 +11,7 @@ import SoloBlogComponent from '../components/SoloBlogComponent'
 import { BlogContext } from '../stateManagement/BlogContext'
 import {AiTwotoneCalendar} from "react-icons/ai"
 const SoloBlog = () => {
-    const [currentBlog,setCurrentBlog]=useState({name:'',summary:'',body:'',topic:'',date:'',rating:''})
+    const [currentBlog,setCurrentBlog]=useState({name:'',summary:'',body:'',topic:'cooking',date:'',rating:''})
     const api=axios.create({
         baseURL:`http://localhost:4000/blogs`
     })
@@ -28,7 +28,7 @@ const SoloBlog = () => {
         //     })
         // }
         const {blogs}=useContext(BlogContext)
-        const [suggestedBlogs,setSuggestedBlogs]=useState()
+        const [suggestedBlogs,setSuggestedBlogs]=useState([])
         useEffect(()=>{
             var tempBlogs
             var tempCurrBlog
@@ -36,9 +36,11 @@ const SoloBlog = () => {
             console.log(tempBlogs)
             do{
             tempCurrBlog=tempBlogs[Math.floor(Math.random()*tempBlogs.length)]
+            console.log('finding suggestions')
             }while(currentBlog===tempCurrBlog)
             setSuggestedBlogs(currBlog=>tempCurrBlog)
         },[blogs,currentBlog.topic,name])
+
         function handleImage(topic){
         switch(topic){
             case "health":
@@ -67,7 +69,7 @@ const SoloBlog = () => {
     return [year, month, day].join('-');
 }
     return (
-        <>
+        <div className='solo-blog-page-container'>
         <div className='solo-blog-container'>
             <div className='solo-blog-date-topic'>
                 <AiTwotoneCalendar className='solo-blog-calendar-icon'/>
@@ -88,7 +90,7 @@ const SoloBlog = () => {
             <h1 className='bold fs-600 '>Also check out</h1>
             {suggestedBlogs?<SoloBlogComponent blog={suggestedBlogs}/>:<h1>error loading suggestions....</h1>}
         </div>
-        </>
+        </div>
     )
 }
 

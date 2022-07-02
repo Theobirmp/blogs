@@ -15,7 +15,7 @@ const Favourites = () => {
         console.log('use effect fetchind blogs')
     }, [blogs])
     return (
-                <div className="blog-container">
+                <div className="blogs-container">
             {favouriteBlogs.map(blog=>(<SoloBlogComponent blog={blog} addRem={true} key={uuidv4()}/>))}
         </div>
     )

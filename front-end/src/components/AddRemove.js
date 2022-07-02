@@ -5,6 +5,7 @@ import {BsFillOctagonFill, BsFillTrashFill} from "react-icons/bs"
 import { BlogContext } from '../stateManagement/BlogContext'
 import { useDispatch } from 'react-redux'
 import { favBlog, unFavBlog } from '../redux/blogs/blogActions'
+import '../css/soloBlog.css'
 const AddRemove = ({addRem,blog}) => {
     const {favouriteBlogs,setFavouriteBlogs}=useContext(BlogContext)
     // const apiFav=axios.create({
@@ -35,7 +36,7 @@ const AddRemove = ({addRem,blog}) => {
     //         }).catch(err=>console.log(err))
     //     }
     return (
-        <div>
+        <div className='add-remove-button' >
             {!addRem?<button onClick={()=>postBlog(blog._id)} className='blog-item-button blog-item-button-add'>Add</button>:<button onClick={()=>deleteBlog(blog)}className='blog-item-button blog-item-button-add'><BsFillTrashFill/></button>}
         </div>
     )

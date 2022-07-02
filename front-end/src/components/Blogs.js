@@ -12,7 +12,7 @@ const Blogs = ({displayBlogs}) => {
     // const [currBlogs,setCurrBlogs]=useState(blogs)
     
     return (
-        <div className="blog-container">
+        <div className="blogs-container">
             {displayBlogs.map(blog=>(
                     <SoloBlogComponent key={uuidv4()} blog={blog}/>
     ))}

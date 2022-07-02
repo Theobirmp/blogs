@@ -29,36 +29,40 @@ const Filter = () => {
         topicsRef.current.classList.toggle('display-none')
     }
     return (
-        <>
-            <button className='filter-dropdown-button' onClick={handleFilters}>Filters</button>
+        <section className='blogs-filters-container'>
+           <div>
+           <button className='filter-dropdown-button' onClick={handleFilters}>Filters</button>
         <div ref={filtersRef} className='filter-dropdown display-none'>
             <button className='filter-button' id='DateNewest' onClick={filterOnClick}>Date(newest)</button>
             <button className='filter-button' id='DateOldest' onClick={filterOnClick}>Date(oldest)</button>
             <button className='filter-button' id='rating' onClick={filterOnClick}>Review Grade</button>
         </div>
+           </div>
+        <div>
         <button className='topics-dropdown-button display-block' onClick={handleTopics}>Topics</button>
         <div ref={topicsRef} className='filter-radio display-none'>
-            <div className='topics-div' >
+            <div className='topics-div filter-button-topics' >
                 <label htmlFor="allBlogs">All Blogs</label>
                 <input type="radio" value={topics.all} id='allBlogs' defaultChecked name='radio' onClick={topicOnClick}/>
             </div>
-            <div className='topics-div'>
+            <div className='topics-div filter-button-topics'>
                 <label htmlFor='health'>Health</label>
                 <input type="radio" value={topics.health} id='health' name='radio' onClick={topicOnClick}/>
             </div>
-            <div className='topics-div'>
+            <div className='topics-div filter-button-topics'>
                 <label htmlFor="sports">Sports</label>
                 <input type="radio" value={topics.sports} id='sports' name='radio' onClick={topicOnClick}/>
             </div>
-            <div className='topics-div'>
+            <div className='topics-div filter-button-topics'>
                 <label htmlFor="cooking">Cooking</label>
                 <input type="radio" value={topics.cooking} id='cooking' name='radio' onClick={topicOnClick}/>
             </div>
-            <div className='topics-div'>
+            <div className='topics-div filter-button-topics'>
                 <label htmlFor="education">Education</label>
                 <input type="radio" value={topics.education} id='education' name='radio' onClick={topicOnClick}/></div>
             </div>
-        </>
+        </div>
+        </section>
     )
 }
 

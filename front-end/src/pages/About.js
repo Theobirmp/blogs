@@ -10,7 +10,7 @@ const Home = () => {
                 <div className='front'>
                     <h1>Front-End Development</h1>
                     <img src={reactLogo} alt="react" className='react'/>
-                    <ul>
+                    <ul className='front-ul'>
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>JavaScript</li>
@@ -20,7 +20,7 @@ const Home = () => {
                 <div className='back'>
                     <h1>Back-End Development</h1>
                 <img src={nodeLogo} alt="node" className='node' />
-                <ul>
+                <ul className='back-ul'>
                         <li>Node.js</li>
                         <li>Express.js</li>
                         <li>MongoDB</li>

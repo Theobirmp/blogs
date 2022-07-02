@@ -20,8 +20,8 @@
 
 }
 .logo{
-    height: 80px;
-    width: 100px;
+    height: auto;
+    width: 80px;
 }
 
 .mobile-menu{
@@ -36,10 +36,11 @@
     background-color: black;
     padding: 2rem 0rem;
     width: 100px;
-    transition: width .75s ;
+    max-width: 0px;
+    transition: max-width .25s ;
 }
 #mobile-menu-active{
-    max-width: unset;
+    max-width: 300px;
     width: 300px;
     right: 0px;
 }

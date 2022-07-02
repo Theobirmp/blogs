@@ -1,9 +1,15 @@
-.display-none {
-    display: none;
+.accordion-p{
+    max-height: 0px;
+    overflow:hidden;
+    transition: max-height 2s linear;
 }
+/* .display-none {
+    max-height: 0px;
+} */
 
 .display-block {
-    display: block;
+    max-height: 100px;
+    transition: max-height 1s;
 }
 
 .accordion-button {
